@@ -1,0 +1,138 @@
+$header-color : #121629;
+
+// .text-center{
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translateY(-50%) translateX(-50%);
+// }
+
+.inner{
+    width: 915px;
+    margin: 0 auto;
+}
+
+#main-content{
+    width: 100%;
+
+    .key-visual{
+        background-image: url("../img/keyVisual.jpg");
+        width: 100%;
+        height: 800px;
+        display: flex;
+        object-fit: cover;
+        //中の要素を左右中央寄せ
+        justify-content: center;
+        //中の要素を上下中央寄せ
+        align-items: center;
+        .key-visual-text{
+            color: white;
+            font-weight: bold;
+            font-size: 2rem;
+        }
+        .logo{
+            color: white;
+            font-size: 8rem;
+        }
+    }
+
+
+    .Introduction{
+        color: red;
+        background: black;
+        width: 100%;
+        // height: 1200px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        .Introduction-text{
+            padding-left: 305px;
+            span{
+                color: white;
+            }
+        }
+
+        div{
+            img{
+                position: absolute;
+                overflow: hidden;
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+
+    
+    .how-to-use{
+        // background: white;
+        span{
+            // color: azure;
+        }
+        .how-to-use-contents{
+            width: 915px;
+        }
+        // 2:1で画面サイズ変更に対応？
+        .how-to-use1{
+            background-color: blue;
+            width: 610px;
+            height: 305px;
+            float: left;
+        }
+
+        .how-to-use2{
+            background-color: red;
+            width: 305px;
+            height: 610px;
+            float: right;
+        }
+
+        .how-to-use3{
+            background-color: green;
+            width: 305px;
+            height: 610px;
+            float: left;
+        }
+
+        .how-to-use-center{
+            background-color: pink;
+            width: 305px;
+            height: 305px;
+            float: left;
+        }
+
+        .how-to-use4{
+            background-color: yellow;
+            width: 610px;
+            height: 305px;
+            float: left;
+        }
+    }
+    
+
+    .spec{
+        background: black;
+        span{
+            color: black;
+        }
+    }
+
+    // .Introduction{
+    //     background: #121629;
+    // }
+    // .Introduction{
+    //     background: azure;
+    // }
+    // .Introduction{
+    //     background: azure;
+    // }
+}
+
+// section{
+//     p{
+//         color: aqua;
+//     }
+// }
+
+
+
+// flexとglid使う
+// id指定「#」、クラス指定「.」
