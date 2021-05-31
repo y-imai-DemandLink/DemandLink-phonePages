@@ -11,17 +11,10 @@
   background-image: url("../img/keyVisual.jpg");
   width: 100%;
   height: 800px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
 }
 
 #main-content .key-visual .key-visual-text {
@@ -36,7 +29,7 @@
 }
 
 #main-content .Introduction {
-  color: red;
+  color: white;
   background: black;
   width: 100%;
   padding-top: 80px;
@@ -51,15 +44,51 @@
   color: white;
 }
 
+#main-content .Introduction div .Introduction1 {
+  font-size: 2rem;
+  padding-bottom: 20px;
+}
+
+#main-content .Introduction div .Introduction2 {
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+}
+
+#main-content .Introduction div .Introduction3 {
+  font-size: 1.2rem;
+  padding-bottom: 20px;
+}
+
 #main-content .Introduction div img {
   position: absolute;
   overflow: hidden;
   width: 200px;
   height: 200px;
+  left: 550px;
+  bottom: 60px;
+}
+
+#main-content .how-to-use {
+  padding-top: 80px;
+  height: 1150px;
+  background-size: 950px 950px;
+}
+
+#main-content .how-to-use p {
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 2rem;
 }
 
 #main-content .how-to-use .how-to-use-contents {
   width: 915px;
+}
+
+#main-content .how-to-use .how-to-use-area {
+  height: 305px;
+  width: 305px;
+  overflow: hidden;
+  float: left;
 }
 
 #main-content .how-to-use .how-to-use1 {
@@ -97,11 +126,72 @@
   float: left;
 }
 
-#main-content .spec {
-  background: black;
+#main-content .ask {
+  background-color: #6cd0ff;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-#main-content .spec span {
-  color: black;
+#main-content .ask .ask-text1 {
+  font-size: 2rem;
+  padding-bottom: 20px;
 }
-/*# sourceMappingURL=style.css.map */
+
+#main-content .ask .ask-text2 {
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+}
+
+#main-content .qa {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+#main-content .qa .qa-text1 {
+  font-size: 2rem;
+  padding-bottom: 40px;
+}
+
+#main-content .qa .qa-contents {
+  font-size: 1.5rem;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: solid 1px;
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../font/MaterialIcons-Regular.eot);
+  /* For IE6-8 */
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url(../font/MaterialIcons-Regular.woff2) format("woff2"), url(../font/MaterialIcons-Regular.woff) format("woff"), url(../font/MaterialIcons-Regular.ttf) format("truetype");
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.hidden-content {
+  display: none;
+}

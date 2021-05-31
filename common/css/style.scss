@@ -38,7 +38,7 @@ $header-color : #121629;
 
 
     .Introduction{
-        color: red;
+        color: white;
         background: black;
         width: 100%;
         // height: 1200px;
@@ -52,24 +52,55 @@ $header-color : #121629;
         }
 
         div{
+            .Introduction1{
+                font-size: 2rem;
+                padding-bottom: 20px;
+            }
+            .Introduction2{
+                font-size: 1.5rem;
+                padding-bottom: 20px;
+            }
+            .Introduction3{
+                font-size: 1.2rem;
+                padding-bottom: 20px;
+            }
             img{
                 position: absolute;
                 overflow: hidden;
                 width: 200px;
                 height: 200px;
+                left: 550px;
+                bottom: 60px;
             }
         }
     }
 
     
     .how-to-use{
+        padding-top: 80px;
+        height: 1150px;
+        background-size: 950px 950px;
         // background: white;
-        span{
+        p{
             // color: azure;
+            // margin: 0 auto;
+            text-align: center;
+            padding-bottom: 30px;
+            font-size: 2rem;
         }
         .how-to-use-contents{
             width: 915px;
+            // padding-bottom: 60px;
         }
+
+        // 範囲内のサイズ矯正
+        .how-to-use-area{
+            height: 305px;
+            width: 305px;
+            overflow: hidden;
+            float: left;
+        }
+        
         // 2:1で画面サイズ変更に対応？
         .how-to-use1{
             background-color: blue;
@@ -106,14 +137,46 @@ $header-color : #121629;
             float: left;
         }
     }
-    
 
-    .spec{
-        background: black;
-        span{
-            color: black;
+    .ask{
+        background-color: rgb(108, 208, 255);
+        padding-top: 60px;
+        padding-bottom: 60px;
+            .ask-text1{
+                font-size: 2rem;
+                padding-bottom: 20px;
+            }
+            .ask-text2{
+                font-size: 1.5rem;
+                padding-bottom: 20px;
+            }
+    }
+
+    .qa{
+        padding-top: 60px;
+        padding-bottom: 60px;
+        .qa-text1{
+            font-size: 2rem;
+            padding-bottom: 40px;
+        }
+        .qa-contents{
+            font-size: 1.5rem;
+            padding: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border: solid 1px;
         }
     }
+
+    
+    
+
+    // .spec{
+    //     background: black;
+    //     span{
+    //         color: black;
+    //     }
+    // }
 
     // .Introduction{
     //     background: #121629;
@@ -126,12 +189,49 @@ $header-color : #121629;
     // }
 }
 
-// section{
-//     p{
-//         color: aqua;
-//     }
-// }
 
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../font/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(../font/MaterialIcons-Regular.woff2) format('woff2'),
+      url(../font/MaterialIcons-Regular.woff) format('woff'),
+      url(../font/MaterialIcons-Regular.ttf) format('truetype');
+  }
+  
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+
+// 非表示
+.hidden-content{
+    display: none;
+}
 
 
 // flexとglid使う

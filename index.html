@@ -14,6 +14,7 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
+
         <input type="hidden" id="page-stats" value="top">
 <!-- 
 ####################################################################################
@@ -54,38 +55,81 @@ main
 
             <div class="Introduction content-center">
                 <div class="inner Introduction-text">
-                    <span  class="text-center">
-                        あああああああああああああああああああああああああああああああああああああああああ
-                        ああああああああああああああああああああああああああああああああ
-                        あああああああああああああああああああああああああああああああああああどんなスマホ？
-                    </span>
+                    <p  class="Introduction1 text-center">
+                        どんなアプリ？
+                    </p>
+                    <p  class="Introduction2 text-center">
+                        弊社が提供する生活を豊かにするアプリです！
+                    </p>
+                    <p  class="Introduction3 text-center">
+                        日常的に使えるアプリから
+                        <br>
+                        お仕事で利用できるアプリまで
+                        <br>
+                        お客様それぞれにあったアプリを提供しています。
+                        <br>
+                        基本使用料金はかかりませんのでぜひ一度ご利用ください
+                    </p>
                     <img src="common/img/IntroductionVisual.jpg">
                  </div>
             </div>
 
             <div class="inner how-to-use content-center">
                 <div class="">
-                    <span>こんなときに</span>
+                    <p>こんなときに</p>
 
                     <!-- 要素１ -->
                     <div class="how-to-use-contents">
                         <div class="how-to-use1">
+                            <div class="how-to-use-area">
+                                <img src="common/img/test.jpg">
+                            </div>
+                            <div class="how-to-use-area">
+                                <span>
+                                    tekitou
+                                    <br>
+                                    testdayo
+                                    <br>
+                                    aaaaa
+                                </span>
+                            </div>
                         </div>
     
                         <!-- 要素２ -->
                         <div class="how-to-use2">
+                            <div class="how-to-use-area">
+
+                            </div>
+                            <div class="how-to-use-area">
+
+                            </div>
                         </div>
     
                         <!-- 要素３ -->
                         <div class="how-to-use3">
+                            <div class="how-to-use-area">
+
+                            </div>
+                            <div class="how-to-use-area">
+
+                            </div>
                         </div>
 
                         <!-- 要素中央 -->
                         <div class="how-to-use-center">
+                            <div class="how-to-use-area">
+
+                            </div>
                         </div>
     
                         <!-- 要素４ -->
                         <div class="how-to-use4">
+                            <div class="how-to-use-area">
+
+                            </div>
+                            <div class="how-to-use-area">
+
+                            </div>
                         </div>
                     </div>
 
@@ -93,33 +137,92 @@ main
                  </div>
             </div>
 
-            <div class="spec"> 
+            <div class="ask"> 
                 <div class="inner">
-                    <span>
-                        すぺっく
-                    </span>
+                    <p class="ask-text1">
+                        すぐ聞ける
+                    </p>
+                    <p class="ask-text2">
+                        アプリの使用方法、などわからないことがあればすぐにサポート致します。
+                        <br>
+                        故障やエラーなどが怒った際にも迅速にサポート致します。
+                    </p>
                 </div>
             </div>
 
-            <div class="">
+            <div class="qa">
                 <div class="inner">
-                    <span>
-                        
-                    </span>
+                    <p class="qa-text1">
+                       よくある質問
+                    </p>
+
+                    <div class="qa-contents qa-text2">
+                        <p>
+                            アプリのご利用にあたって
+                        </p>
+                        <span class="material-icons qa-menu-opne">
+                            reorder
+                        </span>
+                        <div class="faq_accordion">
+                            <dl>
+                                対応機種を知りたい
+                                <dd class="hidden-content">
+                                    <p>
+                                        本サイトの対応機種をご覧ください
+                                    </p>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <div class="qa-contents qa-text3">
+                        <p>
+                            アプリの利用料金について
+                        </p>
+                        <span class="material-icons qa-menu-opne">
+                            reorder
+                        </span>
+                        <div class="faq_accordion hidden-content">
+                            <dl>
+                                スマホ側での設定方法がわかりません
+                                <dd class="hidden-content">
+                                    <p>
+                                        ヘルプをご参照ください
+                                    </p>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <div class="qa-contents qa-text4">
+                        <p>
+                            携帯での動作について
+                        </p>
+                        <span class="material-icons">
+                            reorder
+                        </span>
+                    </div>
+
+                    <div class="qa-contents qa-text5">
+                        <p>
+                            デマンドリンクでのお話
+                        </p>
+                        <span class="material-icons">
+                            reorder
+                        </span>
+                    </div>
                 </div>
             </div>
 
-            <div class="">
-                <div class="inner">
-                    <span>
-                        
-                    </span>
-                </div>
-            </div>
-            
             <div class="footer">
             </div>
 
         </section>
+
+        <!-- 要素の初期表示を非表示にする -->
+        <script>
+            $('.faq_accordion').hide();
+        </script>
+
     </body>
 </html>
