@@ -13,7 +13,9 @@ $header-color : #121629;
 }
 
 #main-content{
-    width: 100%;
+    // width: 100%;
+    width: 1200px;
+
 
     .key-visual{
         background-image: url("../img/keyVisual.jpg");
@@ -270,13 +272,23 @@ $header-color : #121629;
 // flexとglid使う
 // id指定「#」、クラス指定「.」
 
-@media screen and (max-width: 480px) {
-	/* 480px以下に適用されるCSS（スマホ用） */
-    width: 100%;
+@media screen and (max-width: 610px) {
 
     .inner{
         // width: 915px;
         width: 100%;
         margin: 0 auto;
+    }
+
+    .how-to-use{
+
+        // background: white;
+        .how-to-use-contents{
+            width: 610px;
+        }
+
+        .how-to-use-center{
+            display: none;
+        }
     }
 }

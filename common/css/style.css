@@ -1,11 +1,10 @@
-@charset "UTF-8";
 .inner {
   width: 915px;
   margin: 0 auto;
 }
 
 #main-content {
-  width: 100%;
+  width: 1200px;
 }
 
 #main-content .key-visual {
@@ -211,11 +210,15 @@
   font-feature-settings: 'liga';
 }
 
-@media screen and (max-width: 480px) {
-  /* 480px以下に適用されるCSS（スマホ用） */
-  width: 100%;
+@media screen and (max-width: 610px) {
   .inner {
     width: 100%;
     margin: 0 auto;
+  }
+  .how-to-use .how-to-use-contents {
+    width: 610px;
+  }
+  .how-to-use .how-to-use-center {
+    display: none;
   }
 }
