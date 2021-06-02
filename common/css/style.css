@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .inner {
   width: 915px;
   margin: 0 auto;
@@ -71,7 +72,8 @@
 #main-content .how-to-use {
   padding-top: 80px;
   height: 1150px;
-  background-size: 950px 950px;
+  background-size: 100% 100%;
+  background-image: url("../img/howToUse.jpg");
 }
 
 #main-content .how-to-use p {
@@ -89,6 +91,15 @@
   width: 305px;
   overflow: hidden;
   float: left;
+}
+
+#main-content .how-to-use .how-to-use-area img {
+  width: 100%;
+  height: 100%;
+}
+
+#main-content .how-to-use .how-to-text {
+  text-align: center;
 }
 
 #main-content .how-to-use .how-to-use1 {
@@ -147,17 +158,25 @@
   padding-bottom: 60px;
 }
 
-#main-content .qa .qa-text1 {
-  font-size: 2rem;
+#main-content .qa .inner .qa-text {
   padding-bottom: 40px;
+  font-size: 2rem;
 }
 
-#main-content .qa .qa-contents {
-  font-size: 1.5rem;
-  padding: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border: solid 1px;
+#main-content .qa .inner .item .question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: #ff6e6c;
+  padding: 16px 8px;
+}
+
+#main-content .qa .inner .item .answer {
+  display: block;
+  padding: 16px 8px;
+  background-color: #ffd3d2;
+  display: none;
 }
 
 @font-face {
@@ -192,6 +211,11 @@
   font-feature-settings: 'liga';
 }
 
-.hidden-content {
-  display: none;
+@media screen and (max-width: 480px) {
+  /* 480px以下に適用されるCSS（スマホ用） */
+  width: 100%;
+  .inner {
+    width: 100%;
+    margin: 0 auto;
+  }
 }

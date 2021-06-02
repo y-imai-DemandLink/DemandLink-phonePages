@@ -1,12 +1,18 @@
 
 $(function(){
-    $(".qa-menu-opne").click(function(){
-        console.log("コンテンツ開くよ");
-        $(this).next().find(".faq_accordion").show(1000);
-        $(this).next().show(1000);
-    
-        // $(".faq_accordion").show(1000);
-    
-    
+    // よくある質問の表示非表示
+    $(".qa-menu-open").click(function(){
+        var hideStats = null;
+        var target = $(this).parent().next();
+
+        target.toggle(500, "linear");
+        target.next().hide(500);
+        
+    });
+
+    $(".open-answer").click(function(){
+        var target = $(this).next();
+        
+        target.toggle(500, "linear");
     });
 });

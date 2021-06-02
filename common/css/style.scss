@@ -79,7 +79,8 @@ $header-color : #121629;
     .how-to-use{
         padding-top: 80px;
         height: 1150px;
-        background-size: 950px 950px;
+        background-size: 100% 100%;
+        background-image: url("../img/howToUse.jpg");
         // background: white;
         p{
             // color: azure;
@@ -99,6 +100,14 @@ $header-color : #121629;
             width: 305px;
             overflow: hidden;
             float: left;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        
+        .how-to-text{
+            text-align: center;
         }
         
         // 2:1で画面サイズ変更に対応？
@@ -155,16 +164,40 @@ $header-color : #121629;
     .qa{
         padding-top: 60px;
         padding-bottom: 60px;
-        .qa-text1{
-            font-size: 2rem;
-            padding-bottom: 40px;
-        }
-        .qa-contents{
-            font-size: 1.5rem;
-            padding: 20px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            border: solid 1px;
+        .inner {
+            .qa-text{
+                padding-bottom: 40px;
+                font-size: 2rem;
+            }
+          .item {
+            .question {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              cursor: pointer;
+              background-color: #ff6e6c;
+              padding: 16px 8px;
+            }
+            .answer {
+              display: block;
+              padding: 16px 8px;
+              background-color: lighten(#ff6e6c, 20%);
+              display: none;
+            }
+
+            // .isOpen {
+            //   @keyframes isOpen {
+            //     from {
+            //       opacity: 0;
+            //     }
+            //     to {
+            //       opacity: 1;
+            //     }
+            //   }
+            //   display: block;
+            //   animation: isOpen 0.3s linear 0s;
+            // }
+          }
         }
     }
 
@@ -229,10 +262,21 @@ $header-color : #121629;
 
 
 // 非表示
-.hidden-content{
-    display: none;
-}
+// .hidden-content{
+//     display: none;
+// }
 
 
 // flexとglid使う
 // id指定「#」、クラス指定「.」
+
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+    width: 100%;
+
+    .inner{
+        // width: 915px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
