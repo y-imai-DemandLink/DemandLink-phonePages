@@ -3,10 +3,6 @@
   margin: 0 auto;
 }
 
-#main-content {
-  width: 1200px;
-}
-
 #main-content .key-visual {
   background-image: url("../img/keyVisual.jpg");
   width: 100%;
@@ -31,13 +27,22 @@
 #main-content .Introduction {
   color: white;
   background: black;
+  display: flex;
+  justify-content: center;
   width: 100%;
   padding-top: 80px;
   padding-bottom: 80px;
 }
 
+#main-content .Introduction .Introduction-img {
+  height: 100%;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+}
+
 #main-content .Introduction .Introduction-text {
-  padding-left: 305px;
+  padding-left: 30px;
 }
 
 #main-content .Introduction .Introduction-text span {
@@ -59,16 +64,8 @@
   padding-bottom: 20px;
 }
 
-#main-content .Introduction div img {
-  position: absolute;
-  overflow: hidden;
-  width: 200px;
-  height: 200px;
-  left: 550px;
-  bottom: 60px;
-}
-
 #main-content .how-to-use {
+  width: 100%;
   padding-top: 80px;
   height: 1150px;
   background-size: 100% 100%;
@@ -82,6 +79,7 @@
 }
 
 #main-content .how-to-use .how-to-use-contents {
+  margin: auto;
   width: 915px;
 }
 
@@ -210,7 +208,7 @@
   font-feature-settings: 'liga';
 }
 
-@media screen and (max-width: 610px) {
+@media screen and (max-width: 914px) {
   .inner {
     width: 100%;
     margin: 0 auto;
