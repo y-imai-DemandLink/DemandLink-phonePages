@@ -8,14 +8,16 @@ $header-color : #121629;
 // }
 
 .inner{
-    width: 915px;
+    width: 100%;
     margin: 0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 #main-content{
     // width: 100%;
     // width: 1200px;
-
+    font-family: YuGothic,YuGothicM,'Yu Gothic',"メイリオ",sans-serif;
 
     .key-visual{
         background-image: url("../img/keyVisual.jpg");
@@ -35,6 +37,7 @@ $header-color : #121629;
         .logo{
             color: white;
             font-size: 8rem;
+            font-weight: 500;
         }
     }
 
@@ -73,6 +76,7 @@ $header-color : #121629;
             .Introduction1{
                 font-size: 2rem;
                 padding-bottom: 20px;
+                font-weight: 700;
             }
             .Introduction2{
                 font-size: 1.5rem;
@@ -89,83 +93,98 @@ $header-color : #121629;
     .how-to-use{
         width: 100%;
         padding-top: 80px;
-        height: 1150px;
+        padding-bottom: 80px;
+        // height: 1150px;
         background-size: 100% 100%;
         background-image: url("../img/howToUse.jpg");
         // background: white;
+        
         p{
             // color: azure;
             // margin: 0 auto;
             text-align: center;
             padding-bottom: 30px;
             font-size: 2rem;
+            font-weight: 700;
         }
         .how-to-use-contents{
+            // 画面幅の90%を指定（適当）
+            width: 90%;
             margin: auto;
-            width: 915px;
-            // padding-bottom: 60px;
-        }
+            // 子要素（box）が、親要素（wrapper）のwidthを超えた場合、折り返す
+            flex-wrap: wrap;
+            // flex化
+            display: flex;
 
-        // 範囲内のサイズ矯正
-        .how-to-use-area{
-            height: 305px;
-            width: 305px;
-            overflow: hidden;
-            float: left;
-            img{
-                width: 100%;
-                height: 100%;
+            .how-to-use-area{
+                overflow: hidden;
+                float: left;
+                width: calc(100% / 3);
+                display: flex;
+
+                &::before {
+                    // レスポンシブな正方形を作る
+                    content: "";
+                    display: block;
+                    padding-top: 100%;
+                    // ↑これをやると％表示でも正方形が作れます
+                }
+                
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
             }
-        }
-        
-        .how-to-text{
-            text-align: center;
-        }
-        
-        // 2:1で画面サイズ変更に対応？
-        .how-to-use1{
-            background-color: blue;
-            width: 610px;
-            height: 305px;
-            float: left;
-        }
+            
+            .how-to-text{
+                text-align: center;
+                span{
+                    margin: auto;
+                }
+            }
+            
+            // 2:1で画面サイズ変更に対応？
+            .text-area1{
+                background-color: rgba(255,255,255,0.8);
+                // width: 305px;
+                // height: 305px;
+            }
 
-        .how-to-use2{
-            background-color: red;
-            width: 305px;
-            height: 610px;
-            float: right;
-        }
+            .text-area2{
+                background-color: rgba(228,207,191,0.8);
+                // width: 305px;
+                // height: 305px;
+            }
 
-        .how-to-use3{
-            background-color: green;
-            width: 305px;
-            height: 610px;
-            float: left;
-        }
+            .text-area3{
+                background-color: rgba(237,233,230,0.8);
+                // width: 305px;
+                // height: 305px;
+            }
 
-        .how-to-use-center{
-            background-color: pink;
-            width: 305px;
-            height: 305px;
-            float: left;
-        }
+            .text-area4{
+                background-color: rgba(240,225,201,0.8);
+                // width: 305px;
+                // height: 305px;
+            }
 
-        .how-to-use4{
-            background-color: yellow;
-            width: 610px;
-            height: 305px;
-            float: left;
+            // .how-to-use4{
+            //     background-color: yellow;
+            //     width: 610px;
+            //     height: 305px;
+            //     float: left;
+            // }
         }
     }
 
     .ask{
-        background-color: rgb(108, 208, 255);
+        background-color: #dedede;
         padding-top: 60px;
         padding-bottom: 60px;
             .ask-text1{
                 font-size: 2rem;
                 padding-bottom: 20px;
+                font-weight: 700;
             }
             .ask-text2{
                 font-size: 1.5rem;
@@ -176,40 +195,40 @@ $header-color : #121629;
     .qa{
         padding-top: 60px;
         padding-bottom: 60px;
+        background-color: #1f1f1f;
+        color: #fff;;
+
         .inner {
             .qa-text{
                 padding-bottom: 40px;
                 font-size: 2rem;
+                font-weight: 700;
             }
-          .item {
-            .question {
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-              cursor: pointer;
-              background-color: #ff6e6c;
-              padding: 16px 8px;
-            }
-            .answer {
-              display: block;
-              padding: 16px 8px;
-              background-color: lighten(#ff6e6c, 20%);
-              display: none;
-            }
+            .item {
+                border: solid;
+                margin-bottom: 5%;
+                font-size: 1.2rem;
 
-            // .isOpen {
-            //   @keyframes isOpen {
-            //     from {
-            //       opacity: 0;
-            //     }
-            //     to {
-            //       opacity: 1;
-            //     }
-            //   }
-            //   display: block;
-            //   animation: isOpen 0.3s linear 0s;
-            // }
-          }
+                .question {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+                background-color: black;
+                padding: 16px 8px;
+                }
+                .answer {
+                display: block;
+                padding: 16px 8px;
+                background-color: lighten(#202020, 20%);
+                display: none;
+                }
+
+                
+                .answer:hover{
+                    opacity: 0.5;
+                }
+            }
         }
     }
 
@@ -282,25 +301,26 @@ $header-color : #121629;
 // flexとglid使う
 // id指定「#」、クラス指定「.」
 
-@media screen and (max-width: 914px) {
-
-    .inner{
-        // width: 915px;
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .how-to-use{
-
-        // background: white;
-        .how-to-use-contents{
-            width: 610px;
-        }
-
-        .how-to-use-center{
-            display: none;
+@media screen and (max-width: 768px) {
+    body{
+        .main-content{
+            .how-to-use{
+                .how-to-use-contents{
+                    .how-to-use-area{
+                        // TBは2列なので /2
+                        width: calc(100% / 2);
+                    }
+                    .img-center {
+                        display: none;
+                    }
+                }
+            }
         }
     }
+    // .inner{
+    //     padding-left: 5%;
+    //     padding-right: 5%;
+    // }
 }
 
 // @media screen and (max-width: 610px) {
