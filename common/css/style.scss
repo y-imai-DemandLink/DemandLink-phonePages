@@ -31,12 +31,13 @@ $header-color : #121629;
         align-items: center;
         .key-visual-text{
             color: white;
-            font-weight: bold;
-            font-size: 2rem;
+            font-weight: normal;
+            font-size: 20px;
+            text-align: center;
         }
         .logo{
             color: white;
-            font-size: 8rem;
+            font-size: 6rem;
             font-weight: 500;
         }
     }
@@ -63,28 +64,58 @@ $header-color : #121629;
             // bottom: 60px;
         }
 
-        .Introduction-text{
-            // display: inline-block;
-            // margin-left: 40%;
+        .Introduction-content{
             padding-left: 30px;
-            span{
-                color: white;
-            }
-        }
 
-        div{
-            .Introduction1{
-                font-size: 2rem;
-                padding-bottom: 20px;
-                font-weight: 700;
+            .Introduction-text{
+                // display: inline-block;
+                // margin-left: 40%;
+                span{
+                    color: white;
+                }
             }
-            .Introduction2{
-                font-size: 1.5rem;
-                padding-bottom: 20px;
+
+            .Introduction-info{
+                margin-top: 20px;
+                padding: 20px;
+                border: solid 1px #ccc;
+                h1{
+                    font-size: 16px;
+                }
+                p{
+                    margin-top: 5px;
+                    font-size: 14px;
+                    line-height: 1.5;
+                }
+                span{
+                    display: block;
+                    text-align: center;
+                    a{
+                        img{
+                            margin-top: 10px;
+                            width: 150px;
+                        }
+                    }
+                }
             }
-            .Introduction3{
-                font-size: 1.2rem;
-                padding-bottom: 20px;
+    
+            div{
+                .Introduction1{
+                    font-size: 2rem;
+                    padding-bottom: 20px;
+                    font-weight: 700;
+                    color: #9a9a9a;
+                }
+                .Introduction2{
+                    font-size: 24px;
+                    padding-bottom: 20px;
+                    font-weight: bold;
+                }
+                .Introduction3{
+                    font-size: 18px;
+                    margin-top: 10px;
+                    padding-bottom: 20px;
+                }
             }
         }
     }
@@ -103,9 +134,10 @@ $header-color : #121629;
             // color: azure;
             // margin: 0 auto;
             text-align: center;
-            padding-bottom: 30px;
-            font-size: 2rem;
-            font-weight: 700;
+            padding-bottom: 40px;
+            font-size: 32px;
+            font-weight: bold;
+            letter-spacing: 0.2rem;
         }
         .how-to-use-contents{
             // 画面幅の90%を指定（適当）
@@ -223,10 +255,10 @@ $header-color : #121629;
                 background-color: lighten(#202020, 20%);
                 display: none;
                 }
-
                 
                 .answer:hover{
                     opacity: 0.5;
+                    color: aqua;
                 }
             }
         }
@@ -301,28 +333,35 @@ $header-color : #121629;
 // flexとglid使う
 // id指定「#」、クラス指定「.」
 
-@media screen and (max-width: 768px) {
-    body{
-        .main-content{
-            .how-to-use{
-                .how-to-use-contents{
-                    .how-to-use-area{
-                        // TBは2列なので /2
-                        width: calc(100% / 2);
-                    }
-                    .img-center {
-                        display: none;
-                    }
-                }
-            }
-        }
-    }
-    // .inner{
-    //     padding-left: 5%;
-    //     padding-right: 5%;
-    // }
-}
+// 768px以下で適応されるクエリ
+// @media screen and (max-width: 768px) {
+//     body{
+//         .main-content{
+//             .how-to-use{
+//                 p{
+//                     color: #fff;
+//                 }
+//                 .how-to-use-contents{
+//                     .how-to-use-area{
+//                         // TBは2列なので /2
+//                         width: calc(100% / 2);
+//                     }
+//                     .img-center {
+//                         display: none;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
 
+@media screen and (max-width: 768px) {
+    .how-to-use-contents{
+        // TBは2列なので /2
+        width: calc(100% / 2);
+    }
+}
+                 
 // @media screen and (max-width: 610px) {
 
 //     .inner{
