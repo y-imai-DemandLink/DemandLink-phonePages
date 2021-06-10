@@ -14,17 +14,10 @@
   background-image: url("../img/keyVisual.jpg");
   width: 100%;
   height: 800px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
 }
 
 #main-content .key-visual .key-visual-text {
@@ -43,12 +36,8 @@
 #main-content .Introduction {
   color: white;
   background: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   width: 100%;
   padding-top: 80px;
   padding-bottom: 80px;
@@ -133,21 +122,18 @@
 #main-content .how-to-use .how-to-use-contents {
   width: 90%;
   margin: auto;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex-wrap: wrap;
   display: flex;
 }
 
 #main-content .how-to-use .how-to-use-contents .how-to-use-area {
   overflow: hidden;
   float: left;
-  /* width: calc(100% / 3); */
-  width: calc(100% / 2);
-  display: -webkit-box;
-  display: -ms-flexbox;
+  width: calc(100% / 3);
   display: flex;
+  font-size: 20px;
+  color: #2d2d2d;
+  font-weight: bold;
 }
 
 #main-content .how-to-use .how-to-use-contents .how-to-use-area::before {
@@ -186,27 +172,38 @@
 }
 
 #main-content .ask {
+  width: 100%;
   background-color: #dedede;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-#main-content .ask .ask-text1 {
-  font-size: 2rem;
-  padding-bottom: 20px;
-  font-weight: 700;
+#main-content .ask .inner {
+  width: 660px;
 }
 
-#main-content .ask .ask-text2 {
-  font-size: 1.5rem;
+#main-content .ask .inner .ask-text1 {
+  font-size: 32px;
+  padding-bottom: 40px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+
+#main-content .ask .inner .ask-text2 {
   padding-bottom: 20px;
+  font-weight: 500;
 }
 
 #main-content .qa {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: #1f1f1f;
+  background-color: #141414;
   color: #fff;
+}
+
+#main-content .qa .inner {
+  width: 960px;
 }
 
 #main-content .qa .inner .qa-text {
@@ -216,36 +213,37 @@
 }
 
 #main-content .qa .inner .item {
-  border: solid;
+  border: solid 1px #4b4b4b;
   margin-bottom: 5%;
   font-size: 1.2rem;
 }
 
 #main-content .qa .inner .item .question {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   cursor: pointer;
-  background-color: black;
-  padding: 16px 8px;
+  padding: 20px;
+  letter-spacing: 0.1em;
+  font-weight: bold;
 }
 
-#main-content .qa .inner .item .answer {
+#main-content .qa .inner .item .answer-list .answer-design {
   display: block;
   padding: 16px 8px;
-  background-color: #535353;
   display: none;
+  margin-bottom: 2px;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 18px;
 }
 
-#main-content .qa .inner .item .answer:hover {
-  opacity: 0.5;
-  color: aqua;
+#main-content .qa .inner .item .answer-list .open-answer {
+  background-color: #1f1f1f;
+}
+
+#main-content .qa .inner .item .answer-list .open-answer:hover {
+  background-color: #535353;
 }
 
 @font-face {
@@ -277,13 +275,14 @@
   /* Support for Firefox. */
   -moz-osx-font-smoothing: grayscale;
   /* Support for IE. */
-  -webkit-font-feature-settings: 'liga';
-          font-feature-settings: 'liga';
+  font-feature-settings: 'liga';
 }
 
 @media screen and (max-width: 768px) {
-  .how-to-use-contents {
+  #main-content .how-to-use .how-to-use-contents .how-to-use-area {
     width: calc(100% / 2);
   }
+  #main-content .how-to-use .how-to-use-contents .img-center {
+    display: none;
+  }
 }
-/*# sourceMappingURL=style.css.map */

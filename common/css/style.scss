@@ -153,6 +153,9 @@ $header-color : #121629;
                 float: left;
                 width: calc(100% / 3);
                 display: flex;
+                font-size: 20px;
+                color: #2d2d2d;
+                font-weight: bold;
 
                 &::before {
                     // レスポンシブな正方形を作る
@@ -210,34 +213,42 @@ $header-color : #121629;
     }
 
     .ask{
+        width: 100%;
         background-color: #dedede;
         padding-top: 60px;
         padding-bottom: 60px;
+        .inner{
+            width: 660px;
             .ask-text1{
-                font-size: 2rem;
-                padding-bottom: 20px;
-                font-weight: 700;
+                font-size: 32px;
+                padding-bottom: 40px;
+                font-weight: bold;
+                text-align: center;
+                letter-spacing: 0.2em;
             }
             .ask-text2{
-                font-size: 1.5rem;
+                // font-size: 1.5rem;
                 padding-bottom: 20px;
+                font-weight: 500;
             }
+        }
     }
 
     .qa{
         padding-top: 60px;
         padding-bottom: 60px;
-        background-color: #1f1f1f;
+        background-color: #141414;
         color: #fff;;
 
         .inner {
+            width: 960px;
             .qa-text{
                 padding-bottom: 40px;
                 font-size: 2rem;
                 font-weight: 700;
             }
             .item {
-                border: solid;
+                border: solid 1px #4b4b4b;
                 margin-bottom: 5%;
                 font-size: 1.2rem;
 
@@ -246,19 +257,28 @@ $header-color : #121629;
                 justify-content: space-between;
                 align-items: center;
                 cursor: pointer;
-                background-color: black;
-                padding: 16px 8px;
+                // background-color: #1f1f1f;
+                padding: 20px;
+                letter-spacing: 0.1em;
+                font-weight: bold;
                 }
-                .answer {
-                display: block;
-                padding: 16px 8px;
-                background-color: lighten(#202020, 20%);
-                display: none;
-                }
-                
-                .answer:hover{
-                    opacity: 0.5;
-                    color: aqua;
+                .answer-list{
+                    .answer-design {
+                        display: block;
+                        padding: 16px 8px;
+                        display: none;
+                        margin-bottom: 2px;
+                        margin-left: 15px;
+                        margin-right: 15px;
+                        font-size: 18px;
+                    }
+                    .open-answer{
+                        background-color: #1f1f1f;
+                    }
+
+                    .open-answer:hover{
+                        background-color: lighten(#202020, 20%);
+                    }
                 }
             }
         }
@@ -356,11 +376,21 @@ $header-color : #121629;
 // }
 
 @media screen and (max-width: 768px) {
-    .how-to-use-contents{
-        // TBは2列なので /2
-        width: calc(100% / 2);
+    #main-content {
+        .how-to-use {
+            .how-to-use-contents {
+                .how-to-use-area {
+                // TBは2列なので /2
+                width: calc(100% / 2);
+                }
+                .img-center{
+                    display: none;
+                }
+            }
+        }
     }
 }
+
                  
 // @media screen and (max-width: 610px) {
 
