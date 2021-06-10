@@ -130,23 +130,26 @@ $header-color : #121629;
         background-image: url("../img/howToUse.jpg");
         // background: white;
         
-        p{
-            // color: azure;
-            // margin: 0 auto;
-            text-align: center;
-            padding-bottom: 40px;
-            font-size: 32px;
-            font-weight: bold;
-            letter-spacing: 0.2rem;
-        }
+
         .how-to-use-contents{
+            width: 915px;
             // 画面幅の90%を指定（適当）
-            width: 90%;
+            // width: 90%;
             margin: auto;
             // 子要素（box）が、親要素（wrapper）のwidthを超えた場合、折り返す
             flex-wrap: wrap;
             // flex化
             display: flex;
+
+            p{
+                // color: azure;
+                margin: 0 auto;
+                // text-align: center;
+                padding-bottom: 40px;
+                font-size: 32px;
+                font-weight: bold;
+                letter-spacing: 0.2rem;
+            }
 
             .how-to-use-area{
                 overflow: hidden;
@@ -263,6 +266,7 @@ $header-color : #121629;
                 font-weight: bold;
                 }
                 .answer-list{
+                    // display: none;
                     .answer-design {
                         display: block;
                         padding: 16px 8px;
@@ -379,6 +383,7 @@ $header-color : #121629;
     #main-content {
         .how-to-use {
             .how-to-use-contents {
+                width: auto;
                 .how-to-use-area {
                 // TBは2列なので /2
                 width: calc(100% / 2);

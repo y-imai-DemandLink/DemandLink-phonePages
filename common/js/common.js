@@ -4,8 +4,9 @@ $(function(){
     $(".qa-menu-open").click(function(){
         var hideStats = null;
         var target = $(this).parent().next().children("div:nth-child(1)");
-        console.log(target);
+        var list = $(this).parent().next();
 
+        // list.toggle(500);
         target.toggle(500, "linear");
         target.next().hide(500);
         

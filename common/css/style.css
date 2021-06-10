@@ -111,19 +111,19 @@
   background-image: url("../img/howToUse.jpg");
 }
 
-#main-content .how-to-use p {
-  text-align: center;
+#main-content .how-to-use .how-to-use-contents {
+  width: 915px;
+  margin: auto;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+#main-content .how-to-use .how-to-use-contents p {
+  margin: 0 auto;
   padding-bottom: 40px;
   font-size: 32px;
   font-weight: bold;
   letter-spacing: 0.2rem;
-}
-
-#main-content .how-to-use .how-to-use-contents {
-  width: 90%;
-  margin: auto;
-  flex-wrap: wrap;
-  display: flex;
 }
 
 #main-content .how-to-use .how-to-use-contents .how-to-use-area {
@@ -279,6 +279,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  #main-content .how-to-use .how-to-use-contents {
+    width: auto;
+  }
   #main-content .how-to-use .how-to-use-contents .how-to-use-area {
     width: calc(100% / 2);
   }
