@@ -44,6 +44,7 @@
 }
 
 #main-content .Introduction .Introduction-img {
+  order: 1;
   height: 100%;
   overflow: hidden;
   width: 200px;
@@ -51,6 +52,7 @@
 }
 
 #main-content .Introduction .Introduction-content {
+  order: 2;
   padding-left: 30px;
 }
 
@@ -279,13 +281,81 @@
 }
 
 @media screen and (max-width: 768px) {
+  #main-content .key-visual div {
+    min-width: 280;
+    padding: 15px;
+    background-color: rgba(20, 20, 20, 0.4);
+  }
+  #main-content .Introduction {
+    display: block;
+  }
+  #main-content .Introduction .Introduction-content {
+    padding-left: 0px;
+  }
+  #main-content .Introduction .Introduction-content .Introduction-text .Introduction1 {
+    font-size: 18px;
+    text-align: center;
+  }
+  #main-content .Introduction .Introduction-content .Introduction-text .Introduction2 {
+    font-size: 16px;
+    padding-bottom: 0px;
+  }
+  #main-content .Introduction .Introduction-content .Introduction-text .Introduction3 {
+    font-size: 14px;
+  }
+  #main-content .Introduction .Introduction-content .Introduction-info {
+    width: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  #main-content .Introduction .Introduction-content .Introduction-info h1 {
+    font-size: 16px;
+  }
+  #main-content .Introduction .Introduction-content .Introduction-info p {
+    font-size: 14;
+  }
+  #main-content .Introduction .Introduction-img {
+    margin: auto;
+  }
+  #main-content .how-to-use {
+    padding: 40px 10px;
+  }
   #main-content .how-to-use .how-to-use-contents {
     width: auto;
+  }
+  #main-content .how-to-use .how-to-use-contents p {
+    font-size: 18px;
   }
   #main-content .how-to-use .how-to-use-contents .how-to-use-area {
     width: calc(100% / 2);
   }
   #main-content .how-to-use .how-to-use-contents .img-center {
     display: none;
+  }
+  #main-content .ask .inner {
+    width: auto;
+  }
+  #main-content .ask .inner .ask-text1 {
+    font-size: 18px;
+    padding-bottom: 0px;
+  }
+  #main-content .ask .inner .ask-text2 {
+    margin-top: 20px;
+    font-size: 0.875rem;
+  }
+  #main-content .qa .inner {
+    width: auto;
+  }
+  #main-content .qa .inner .qa-text {
+    font-size: 18px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  #main-content .qa .inner .item .question {
+    padding: 10px 10px 10px 10px;
+  }
+  #main-content .qa .inner .item .answer-list .answer-design {
+    padding: 10px 40px 10px 10px;
   }
 }

@@ -54,6 +54,9 @@ $header-color : #121629;
         padding-bottom: 80px;
 
         .Introduction-img{
+            // 順番変更
+            order: 1;
+
             // display: inline-block;
             height: 100%;
             // position: absolute;
@@ -65,6 +68,8 @@ $header-color : #121629;
         }
 
         .Introduction-content{
+            // 順番変更
+            order: 2;
             padding-left: 30px;
 
             .Introduction-text{
@@ -380,16 +385,105 @@ $header-color : #121629;
 // }
 
 @media screen and (max-width: 768px) {
+
     #main-content {
+
+        // ロゴ
+        .key-visual{
+            div{
+                min-width: 280;
+                padding: 15px;
+                background-color: rgba($color: #141414, $alpha: 0.4);
+            }
+        }
+    
+        // どんなアプリ
+        .Introduction{
+            display: block;
+            .Introduction-content{
+                padding-left: 0px;
+                .Introduction-text{
+                    .Introduction1{
+                        font-size: 18px;
+                        text-align: center;
+                    }
+                    .Introduction2{
+                        font-size: 16px;
+                        padding-bottom: 0px;
+                    }
+                    .Introduction3{
+                        font-size: 14px;
+                    }
+                }
+
+                .Introduction-info{
+                    width: auto;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    text-align: center;
+                    h1{
+                        font-size: 16px;
+                    }
+                    p{
+                        font-size: 14;
+                    }
+                }
+            }
+
+
+            .Introduction-img{
+                margin: auto;
+            }
+        }
+
         .how-to-use {
+            padding: 40px 10px;
             .how-to-use-contents {
                 width: auto;
+                p{
+                    font-size: 18px;
+                }
                 .how-to-use-area {
                 // TBは2列なので /2
                 width: calc(100% / 2);
                 }
                 .img-center{
                     display: none;
+                }
+            }
+        }
+
+        .ask{
+            .inner{
+                width: auto;
+                .ask-text1{
+                    font-size: 18px;
+                    padding-bottom: 0px;
+                }
+                .ask-text2{
+                    margin-top: 20px;
+                    font-size: 0.875rem;
+                }
+            }
+        }
+
+        .qa{
+            .inner{
+                width: auto;
+                .qa-text{
+                    font-size: 18px;
+                    padding-bottom: 20px;
+                    text-align: center;
+                }
+                .item{
+                    .question{
+                        padding: 10px 10px 10px 10px;
+                    }
+                    .answer-list{
+                        .answer-design{
+                            padding: 10px 40px 10px 10px;
+                        }
+                    }
                 }
             }
         }
