@@ -15,339 +15,344 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
+        <div class="global-wrapper" id="global-wrapper">
 
-        <input type="hidden" id="page-stats" value="top">
-<!-- 
-####################################################################################
-header
-####################################################################################
--->
-        <header>
+    <!-- 
+    ####################################################################################
+    header
+    ####################################################################################
+    -->
+            <header>
 
-        </header>
+            </header>
 
-<!-- 
-####################################################################################
-main
-####################################################################################
--->
-        <div id="shutter" class="shutter opne-shutter"></div>
-        <div id="darkening" class=""></div>
-
-        <div class="container">
-            <div class="header-title">
-                <p>アプリ紹介サイト</p>
-            </div>
-            <div class="header-menu">
-
-            </div>
-        </div>
-        <div class="header-content">
-
-            <span class="material-icons header-menu-open">
-                reorder
-            </span>
+    <!-- 
+    ####################################################################################
+    main
+    ####################################################################################
+    -->
+            <div id="shutter" class="shutter opne-shutter"></div>
+            <div id="darkening" class=""></div>
             
-            <div class="header-menu">
-                <dl>
-                    <dt>
-                        <a>ホーム</a>
-                    </dt>
-                </dl>
+            <div class="container">
+                <div class="header-title">
+                    <p>アプリ紹介サイト</p>
+                </div>
+                <div class="header-menu">
 
-                <dl>
-                    <dt>
-                        <a>スペシャルサイト</a>
-                    </dt>
-                    <dd class="header-menu-contents-list">
-                        <span>アプリ１</span>
-                        <span>アプリ２</span>
-                        <span>アプリ３</span>
-                    </dd>
-                </dl>
-
-                <dl>
-                    <dt>
-                        <a>アプリラインナップ</a>
-                    </dt>
-                    <dd class="header-menu-contents-list">
-                        <span>スマートフォン</span>
-                        <span>携帯電話</span>
-                        <span>ノートPC</span>
-                    </dd>
-                </dl>
-
-                <dl>
-                    <dt>
-                        <a>サポート</a>
-                    </dt>
-                    <dd class="header-menu-contents-list">
-                        <span>チャットで質問</span>
-                        <span>よくある質問</span>
-                        <span>F&Q</span>
-                    </dd>
-                </dl>
-
-                <dl>
-                    <dt>
-                        <a>法人のお客様</a>
-                    </dt>
-                    <dd class="header-menu-contents-list">
-                        <span>法人ソリューション</span>
-                        <span>法人向けサービス</span>
-                        <span>法人向け対応</span>
-                    </dd>
-                </dl>
-
-            </div>
-
-        </div>
-
-        <section id="main-content">
-
-            <div class="key-visual content-center">
-                <div class="">
-                    <h1 class="key-visual-text">
-                       人とアプリの新しい関係
-                    </h1>
-                    <p class="logo">
-                        Demand Link
-                    </p>
                 </div>
             </div>
+            <div class="header-content">
 
-            <div class="inner Introduction content-center">
+                <!-- レスポンシブメニュー展開ボタン -->
+                <div class="header-menu-open" onclick="navToggle();">
+                    <span class="material-icons">
+                        reorder
+                    </span>
+                </div>
+                
+                <!-- メニュー内容 -->
+                <nav class="header-menu global-nav" id="global-nav">
+                    <dl>
+                        <dt>
+                            <a>ホーム</a>
+                        </dt>
+                    </dl>
 
-                <div class="Introduction-content">
-                    <div class="Introduction-text">
-                        <p  class="Introduction1 text-center">
-                            どんなアプリ？
-                        </p>
-                        <p  class="Introduction2 text-center">
-                            弊社が提供する生活を豊かにするアプリです！
-                        </p>
-                        <p  class="Introduction3 text-center">
-                            日常的に使えるアプリから
-                            <br>
-                            お仕事で利用できるアプリまで
-                            <br>
-                            お客様それぞれにあったアプリを提供しています。
-                            <br>
-                            基本使用料金はかかりませんのでぜひ一度ご利用ください
-                        </p>
-                    </div>
-                    <div class="Introduction-info">
-                        <h1>
-                            デマンドリンクアプリをご利用のお客様へ
+                    <dl>
+                        <dt>
+                            <a>スペシャルサイト</a>
+                        </dt>
+                        <dd class="header-menu-contents-list">
+                            <span>アプリ１</span>
+                            <span>アプリ２</span>
+                            <span>アプリ３</span>
+                        </dd>
+                    </dl>
+
+                    <dl>
+                        <dt>
+                            <a>アプリラインナップ</a>
+                        </dt>
+                        <dd class="header-menu-contents-list">
+                            <span>スマートフォン</span>
+                            <span>携帯電話</span>
+                            <span>ノートPC</span>
+                        </dd>
+                    </dl>
+
+                    <dl>
+                        <dt>
+                            <a>サポート</a>
+                        </dt>
+                        <dd class="header-menu-contents-list">
+                            <span>チャットで質問</span>
+                            <span>よくある質問</span>
+                            <span>F&Q</span>
+                        </dd>
+                    </dl>
+
+                    <dl>
+                        <dt>
+                            <a>法人のお客様</a>
+                        </dt>
+                        <dd class="header-menu-contents-list">
+                            <span>法人ソリューション</span>
+                            <span>法人向けサービス</span>
+                            <span>法人向け対応</span>
+                        </dd>
+                    </dl>
+
+                </nav>
+
+            </div>
+
+            <section id="main-content">
+
+                <div class="key-visual content-center">
+                    <div class="">
+                        <h1 class="key-visual-text">
+                        人とアプリの新しい関係
                         </h1>
-                        <p>
-                            アプリの提供アップデートは<a href="#">こちら</a>で随時行っております。
+                        <p class="logo">
+                            Demand Link
                         </p>
-                        <span>
-                            <a href="#"><img src="common/img/googleplay.png"></a>
-                        </span>
                     </div>
                 </div>
-                <div class="Introduction-img">
-                    <img src="common/img/IntroductionVisual.jpg">
-                </div>
 
+                <div class="inner Introduction content-center">
 
-
-            </div>
-
-            <div class="inner how-to-use content-center">
-                <div class="how-to-use-contents">
-                    <p>DemandLinkアプリは、こんなときに</p>
-                    <!-- 要素１ -->
-                    <div class="how-to-use-area">
-                        <img src="common/img/howToUseimg1.jpg">
-                    </div>
-
-                    <!-- 要素２ -->
-                    <div class="how-to-use-area how-to-text text-area1">
-                        <span>
-                            tekitou
-                            <br>
-                            testdayo
-                            <br>
-                            aaaaa
-                        </span>
-                    </div>
-
-                    <!-- 要素３ -->
-                    <div class="how-to-use-area">
-                        <img src="common/img/howToUseimg2.jpg">
-                    </div>
-
-                    <!-- 要素４ -->
-                    <div class="how-to-use-area how-to-text text-area2">
-                        <span>
-                            aka222
-                            <br>
-                            test
-                            <br>
-                            aaaaa
-                        </span>
-                    </div>
-
-                    <!-- 要素中央 -->
-                    <div class="how-to-use-area img-center">
-                        <img src="common/img/howToUseimg4.jpg">
-                    </div>
-
-                    <!-- 要素５ -->
-                    <div class="how-to-use-area how-to-text text-area3">
-                        <span>
-                            aka333
-                            <br>
-                            test
-                            <br>
-                            aaaaa
-                        </span>
-                    </div>
-
-                    <!-- 要素６ -->
-                    <div class="how-to-use-area">
-                        <img src="common/img/howToUseimg3.jpg">
-                    </div>
-
-                    <!-- 要素７ -->
-                    <div class="how-to-use-area how-to-text text-area4">
-                        <span>
-                            aka444
-                            <br>
-                            test
-                            <br>
-                            aaaaa
-                        </span>
-                    </div>
-
-                    <!-- 要素８ -->
-                    <div class="how-to-use-area">
-                        <img src="common/img/howToUseimg5.jpg">
-                    </div>
-                </div>
-            </div>
-
-            <div class="ask"> 
-                <div class="inner">
-                    <p class="ask-text1">
-                        すぐ聞ける
-                    </p>
-                    <p class="ask-text2">
-                        アプリの使用方法、などわからないことがあればすぐにサポート致します。
-                        <br>
-                        故障やエラーなどが怒った際にも迅速にサポート致します。
-                    </p>
-                </div>
-            </div>
-
-            <div class="qa">
-                <div class="inner">
-                    <p class="qa-text">
-                        よくある質問
-                    </p>
-                    <div class="item">
-                        <div class="question">
-                            <p>
-                                アプリのご利用にあたって
+                    <div class="Introduction-content">
+                        <div class="Introduction-text">
+                            <p  class="Introduction1 text-center">
+                                どんなアプリ？
                             </p>
-                            <span class="material-icons qa-menu-open">
-                                reorder
+                            <p  class="Introduction2 text-center">
+                                弊社が提供する生活を豊かにするアプリです！
+                            </p>
+                            <p  class="Introduction3 text-center">
+                                日常的に使えるアプリから
+                                <br>
+                                お仕事で利用できるアプリまで
+                                <br>
+                                お客様それぞれにあったアプリを提供しています。
+                                <br>
+                                基本使用料金はかかりませんのでぜひ一度ご利用ください
+                            </p>
+                        </div>
+                        <div class="Introduction-info">
+                            <h1>
+                                デマンドリンクアプリをご利用のお客様へ
+                            </h1>
+                            <p>
+                                アプリの提供アップデートは<a href="#">こちら</a>で随時行っております。
+                            </p>
+                            <span>
+                                <a href="#"><img src="common/img/googleplay.png"></a>
                             </span>
                         </div>
-                        <div class="answer-list">
-                            <div class="answer-design open-answer">
-                                <p>
-                                    <span>Q</span> 対応機種を知りたい
-                                </p>
-                            </div>
-                            <div class="answer-design answer">
-                                <p>
-                                    <span>A</span> 本サイトの対応機種をご覧ください
-                                </p>
-                            </div>
-                        </div>
                     </div>
-                 
-
-        
-                    <div class="item">
-                        <div class="question">
-                            <p>
-                                アプリの利用料金について
-                            </p>
-                            <span class="material-icons qa-menu-open">
-                                reorder
-                            </span>
-                        </div>
-                        <div class="answer-list">
-                            <div class="answer-design open-answer">
-                                <p>
-                                    <span>Q</span> 無料でご利用出来ますが、一部有料のサービスもございます
-                                </p>
-                            </div>
-                            <div class="answer-design answer">
-                                <p>
-                                    <span>A</span> 有料サービスについてはこちらをご覧ください
-                                </p>
-                            </div>
-                        </div>
+                    <div class="Introduction-img">
+                        <img src="common/img/IntroductionVisual.jpg">
                     </div>
 
-                    <div class="item">
-                        <div class="question">
-                            <p>
-                                携帯での動作について
-                            </p>
-                            <span class="material-icons qa-menu-open">
-                                reorder
-                            </span>
-                        </div>
-                        <div class="answer-list">
-                            <div class="answer-design open-answer">
-                                <p>
-                                    <span>Q</span> スマホ側での設定方法がわかりません
-                                </p>
-                            </div>
-                            <div class="answer-design answer">
-                                <p>
-                                    <span>A</span> ヘルプをご参照ください
-                                </p>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="item">
-                        <div class="question">
-                            <p>
-                                デマンドリンクでのお話
-                            </p>
-                            <span class="material-icons qa-menu-open">
-                                reorder
-                            </span>
-                        </div>
-                        <div class="answer-list">
-                            <div class="answer-design open-answer">
-                                <p>
-                                    <span>Q</span> どんな会社？
-                                </p>
-                            </div>
-                            <div class="answer-design answer">
-                                <p>
-                                    <span>A</span> 提供するサービスについて
-                                </p>
-                            </div>
-                        </div>
-                    </div>
 
                 </div>
-            </div>
 
-            <div class="footer">
-            </div>
+                <div class="inner how-to-use content-center">
+                    <div class="how-to-use-contents">
+                        <p>DemandLinkアプリは、こんなときに</p>
+                        <!-- 要素１ -->
+                        <div class="how-to-use-area">
+                            <img src="common/img/howToUseimg1.jpg">
+                        </div>
 
-        </section>
+                        <!-- 要素２ -->
+                        <div class="how-to-use-area how-to-text text-area1">
+                            <span>
+                                tekitou
+                                <br>
+                                testdayo
+                                <br>
+                                aaaaa
+                            </span>
+                        </div>
+
+                        <!-- 要素３ -->
+                        <div class="how-to-use-area">
+                            <img src="common/img/howToUseimg2.jpg">
+                        </div>
+
+                        <!-- 要素４ -->
+                        <div class="how-to-use-area how-to-text text-area2">
+                            <span>
+                                aka222
+                                <br>
+                                test
+                                <br>
+                                aaaaa
+                            </span>
+                        </div>
+
+                        <!-- 要素中央 -->
+                        <div class="how-to-use-area img-center">
+                            <img src="common/img/howToUseimg4.jpg">
+                        </div>
+
+                        <!-- 要素５ -->
+                        <div class="how-to-use-area how-to-text text-area3">
+                            <span>
+                                aka333
+                                <br>
+                                test
+                                <br>
+                                aaaaa
+                            </span>
+                        </div>
+
+                        <!-- 要素６ -->
+                        <div class="how-to-use-area">
+                            <img src="common/img/howToUseimg3.jpg">
+                        </div>
+
+                        <!-- 要素７ -->
+                        <div class="how-to-use-area how-to-text text-area4">
+                            <span>
+                                aka444
+                                <br>
+                                test
+                                <br>
+                                aaaaa
+                            </span>
+                        </div>
+
+                        <!-- 要素８ -->
+                        <div class="how-to-use-area">
+                            <img src="common/img/howToUseimg5.jpg">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ask"> 
+                    <div class="inner">
+                        <p class="ask-text1">
+                            すぐ聞ける
+                        </p>
+                        <p class="ask-text2">
+                            アプリの使用方法、などわからないことがあればすぐにサポート致します。
+                            <br>
+                            故障やエラーなどが怒った際にも迅速にサポート致します。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="qa">
+                    <div class="inner">
+                        <p class="qa-text">
+                            よくある質問
+                        </p>
+                        <div class="item">
+                            <div class="question">
+                                <p>
+                                    アプリのご利用にあたって
+                                </p>
+                                <span class="material-icons qa-menu-open">
+                                    reorder
+                                </span>
+                            </div>
+                            <div class="answer-list">
+                                <div class="answer-design open-answer">
+                                    <p>
+                                        <span>Q</span> 対応機種を知りたい
+                                    </p>
+                                </div>
+                                <div class="answer-design answer">
+                                    <p>
+                                        <span>A</span> 本サイトの対応機種をご覧ください
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    
+
+            
+                        <div class="item">
+                            <div class="question">
+                                <p>
+                                    アプリの利用料金について
+                                </p>
+                                <span class="material-icons qa-menu-open">
+                                    reorder
+                                </span>
+                            </div>
+                            <div class="answer-list">
+                                <div class="answer-design open-answer">
+                                    <p>
+                                        <span>Q</span> 無料でご利用出来ますが、一部有料のサービスもございます
+                                    </p>
+                                </div>
+                                <div class="answer-design answer">
+                                    <p>
+                                        <span>A</span> 有料サービスについてはこちらをご覧ください
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="question">
+                                <p>
+                                    携帯での動作について
+                                </p>
+                                <span class="material-icons qa-menu-open">
+                                    reorder
+                                </span>
+                            </div>
+                            <div class="answer-list">
+                                <div class="answer-design open-answer">
+                                    <p>
+                                        <span>Q</span> スマホ側での設定方法がわかりません
+                                    </p>
+                                </div>
+                                <div class="answer-design answer">
+                                    <p>
+                                        <span>A</span> ヘルプをご参照ください
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="question">
+                                <p>
+                                    デマンドリンクでのお話
+                                </p>
+                                <span class="material-icons qa-menu-open">
+                                    reorder
+                                </span>
+                            </div>
+                            <div class="answer-list">
+                                <div class="answer-design open-answer">
+                                    <p>
+                                        <span>Q</span> どんな会社？
+                                    </p>
+                                </div>
+                                <div class="answer-design answer">
+                                    <p>
+                                        <span>A</span> 提供するサービスについて
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="footer">
+                </div>
+
+            </section>
+        </div>
     </body>
 </html>
